@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba login</title>
+    <link rel="stylesheet" type="text/css" href="GestiónInventario_style.css">
+    <style>
+        body {
+            display: flex;
+        }
+
+        .menu_secundario {
+            flex: 0 0 200px; /* Ancho fijo de 200px */
+            background-color: lightgray; /* Color de fondo para la columna del menú */
+            padding: 10px;
+        }
+
+        .container {
+            flex: 1; /* La tabla ocupa todo el espacio restante */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="POST">
+        <div class="container">
+            <div class="form-background">
+            <h1>Iniciar sesión</h1>
+           <form>
+            <input type="text" id="Email" name="Email" placeholder="Email">
+            <br>
+            <input type="text" id="Password" name="Password" placeholder="Password">
+            <br><br>
+            <input type="submit" value="Ingresar">
+          </form>
+          </div>
+        <div class="login">
+            <p>¿Necesitas una cuenta?<a href="#">Registrarse</a></p>
+          </div>
+        </div>
+    </form>
+</body>
+</html>
